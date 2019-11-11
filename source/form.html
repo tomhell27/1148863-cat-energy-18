@@ -10,7 +10,7 @@
             <img class="header__logo-image" src="#logo_cat" alt="Здоровое питание для кошек «CAT ENERGY»">
           </a>
           <img class="header__image" src="#logo_cat1" alt="«CAT ENERGY»">
-          <h1 class="visualy-hidden">CAT ENERGY</h1>
+          <h2 class="visually-hidden">CAT ENERGY</h2>
           <nav class="header__menu">
             <ul class="site-list">
               <li class="site-list__item">
@@ -26,7 +26,57 @@
           </nav>
       </header>
       <main>
-        <!--Когда-нибудь здесь будет форма-->
+        <section class="program">
+            <h1 class="program__head">Подбор программы</h1>
+            <p class="program__intro">
+             Заполните анкету и мы подберем программу питания для вашего кота
+            </p>
+        </section>
+         <!--ФОРМА-->
+        <form action="https://echo.htmlacademy.ru" method="post" class="program-form">
+          <fieldset class="cat-data" >
+            <label for="cat_name" class="cat-data__label">Имя:*</label>
+            <input type="text" id="cat_name" name="name" placeholder="Барсик" required class="cat-data__name">
+            <label for="cat_weight" class="cat-data__label">Вес (кг):*</label>
+            <input type="text" id="cat_weight" name="weight" placeholder="7" required class="cat-data__name">
+            <label for="cat_age" class="cat-data__label">Возраст (лет):*</label>
+            <input type="text" id="cat_age" name="age" placeholder="7" class="cat-data__name">
+          </fieldset>
+          <fieldset class="cat-aspiration">
+            <input type="radio" id="slim" name="aspiration" value="slim" checked class="cat-aspiration__check">
+            <label for="slim" class="cat-aspiration__label">Похудение</label>
+            <input type="radio" id="pro" name="aspiration" value="pro" class="cat-aspiration__check">
+            <label for="pro" class="cat-aspiration__label">Набор массы</label>
+            <input type="radio" id="help" name="aspiration" value="help" class="cat-aspiration__check">
+            <label for="help" class="cat-aspiration__label">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="owner-data">
+            <p class="owner-mail">
+              <label for="mail">e-mail:*</label>
+              <input type="text" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required class="owner-mail__name">
+              <button type="button" class="owner-mail__icon"></button>
+            </p>
+            <p class="owner-phone">
+              <label for="phone">Телефон:*</label>
+              <input type="text" id="phone" name="owner-phone" placeholder="8(960)900-60-90" required class="owner-phone__name">
+              <button type="button" class="owner-phone__icon"></button>
+            </p>
+          </fieldset>
+          <fieldset class="cat-info">
+            <label for="about" class="cat-info__label"></label>
+            <textarea id="about" name="about-cat" rows="5" placeholder="расскажите обо всех повадках кота" class="cat-info__text">
+            </textarea>
+          </fieldset>
+          <fieldset class="cat-addition">
+            <p class="cat-addition__title">Дополнительно</p>
+            <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check">
+            <input type="checkbox" id="water" name="add-water" class="cat-addition__check">
+            <input type="checkbox" id="milk" name="add-milk" class="cat-addition__check">
+            <input type="checkbox" id="vitamin" name="add-vitamin" class="cat-addition__check">
+          </fieldset>
+          <input type="submit" value="Отправить заявку" class="program-form__submit">
+          <p class="program-form__nb">*-- Обязательные поля</p>
+        </form>
       </main>
       <footer class="footer">
         <!--А тут будет карта-->
