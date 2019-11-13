@@ -25,17 +25,68 @@
             </ul>
           </nav>
       </header>
-      <main>
+      <main class="main">
         <section class="program">
-            <h1 class="program__head">Подбор программы</h1>
+            <h1 class="main__head">Подбор программы</h1>
             <p class="program__intro">
              Заполните анкету и мы подберем программу питания для вашего кота
             </p>
         </section>
-         <!--ФОРМА-->
-
+        <form action="https://echo.htmlacademy.ru" method="post" class="program-form">
+          <fieldset class="cat-data" >
+          <label for="cat-name" class="cat-data__label">Имя:*</label>
+          <input type="text" id="cat-name" name="name" placeholder="Барсик" required class="cat-data__name">
+          <label for="cat-weight" class="cat-data__label">Вес (кг):*</label>
+          <input type="text" id="cat-weight" name="weight" placeholder="7" required class="cat-data__name">
+          <label for="cat-age" class="cat-data__label">Возраст (лет):*</label>
+          <input type="text" id="cat-age" name="age" placeholder="7" class="cat-data__name">
+        </fieldset>
+        <fieldset class="cat-aspiration">
+          <input type="radio" id="slim" name="aspiration" value="slim" checked class="cat-aspiration__check">
+          <label for="slim" class="cat-aspiration__label">Похудение</label>
+          <input type="radio" id="pro" name="aspiration" value="pro" class="cat-aspiration__check">
+          <label for="pro" class="cat-aspiration__label">Набор массы</label>
+          <input type="radio" id="help" name="aspiration" value="help" class="cat-aspiration__check">
+          <label for="help" class="cat-aspiration__label">Не знаю (нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="owner-data">
+          <h2 class="program-form__head">Контактные данные (владельца кота)</h2>
+          <p class="owner-mail">
+            <label for="mail">e-mail:*</label>
+            <input type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required class="owner-mail__name">
+            <!--картинка-->
+          </p>
+          <p class="owner-phone">
+            <label for="phone">Телефон:*</label>
+            <input type="tel" id="phone" name="owner-phone" placeholder="8(960)900-60-90" required class="owner-phone__name">
+            <!--картинка-->
+          </p>
+        </fieldset>
+        <fieldset class="cat-info">
+          <label for="about" class="program-form__head">Комментарий</label>
+          <textarea id="about" name="about-cat" rows="5" class="cat-info__text">расскажите обо всех повадках кота
+          </textarea>
+        </fieldset>
+        <fieldset class="cat-addition">
+          <h2 class="program-form__head">Дополнительно</h2>
+          <label for="sugar" class="cat-addition__label">Сахарозаменитель</label>
+          <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check">
+          <label for="water" class="cat-addition__label">Питьевая вода</label>
+          <input type="checkbox" id="water" name="add-water" class="cat-addition__check">
+          <label for="milk" class="cat-addition__label">Молоко</label>
+          <input type="checkbox" id="milk" name="add-milk" class="cat-addition__check">
+          <label for="vitamin" class="cat-addition__label">Витамины</label>
+          <input type="checkbox" id="vitamin" name="add-vitamin" class="cat-addition__check">
+        </fieldset>
+        <button type="submit" class="button">Отправить заявку</button>
+        <p class="program-form__nb">*-- Обязательные поля</p>
+      </form>
       </main>
       <footer class="footer">
+          <section class="welcome">
+              <p class="welcome__partnership">Приглашаем к сотрудничеству диллеров!</p>
+              <p class="welcome__adress">ул.Большая Конюшенная, д. 19/8</p>
+          </section>
         <!--А тут будет карта-->
         <img class="footer__image" src="#logo_cat1" alt="«CAT ENERGY»">
         <ul class="footer__smm-list smm-list">
