@@ -1,4 +1,6 @@
 .program-choice {
+  display: flex;
+  flex-direction: column;
   background-color: @color-back--text;
 }
 
@@ -28,4 +30,10 @@
   line-height: 18px;
   text-align: left;
   color: @color-font--arial;
+}
+
+@media (min-width: @desktop-width) {
+  .program-choice {
+    flex-direction: row;
+  }
 }

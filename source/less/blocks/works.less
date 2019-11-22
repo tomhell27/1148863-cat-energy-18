@@ -1,3 +1,8 @@
+.works__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .works__head {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -16,4 +21,18 @@
   line-height: 18px;
   text-align: left;
   color: @color-font--arial;
+}
+
+@media (min-width: @tablet-width) {
+  .works__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .works__info {
+    width: 201px;
+    height: 63px;
+  }
 }

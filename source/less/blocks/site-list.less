@@ -1,3 +1,10 @@
+.site-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .site-list__item {
   list-style-type: none;
   text-align: center;
@@ -10,4 +17,32 @@
   color: @color-font--main;
   line-height: 20px;
   font-size: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__link {
+    font-weight: normal;
+    color: @color-font--black;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
+  .site-list__link--index {
+    font-weight: normal;
+    color: @color-back--main;
+    line-height: 25px;
+    font-size: 20px;
+    text-align: left;
+  }
 }
