@@ -52,27 +52,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .introduce__head {
-    font-family: @font-family--oswald;
-    font-weight: normal;
-    line-height: 60px;
-    font-size: 60px;
-    color: @color-font--main;
-    text-align: left;
-  }
-
-  .introduce {
+  .introduce__info::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -60px;
+    width: 720px;
+    height: 696px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    background-position-x: right;
-  }
-
-  .introduce__info {
-    font-weight: normal;
-    line-height: 20px;
-    font-size: 20px;
-    color: @color-font--main;
-    text-align: left;
+    z-index: 0;
   }
 }
