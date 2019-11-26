@@ -1,7 +1,9 @@
-.header {
+.header__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 100%;
+  margin: auto;
 }
 
 .header__logo {
@@ -13,7 +15,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .header {
+  .header__container {
     flex-direction: row;
   }
 
@@ -27,10 +29,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .header {
+  .header__container {
     position: relative;
-    flex-direction: row;
-    justify-content: space-between;
     background: none;
     z-index: 2;
   }
