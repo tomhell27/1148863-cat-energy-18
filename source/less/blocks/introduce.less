@@ -7,20 +7,16 @@
   text-align: center;
 }
 
-.introduce__container {
-  width: 100%;
+.introduce {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-color: @color-button;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.introduce__container--inner {
+.introduce__container {
   max-width: 280px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
 }
 
 .introduce__info {
@@ -33,6 +29,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .introduce__container {
+    max-width: 710px;
+  }
+
   .introduce__head {
     width: 450px;
     font-family: @font-family--oswald;
@@ -43,7 +43,7 @@
     text-align: left;
   }
 
-  .introduce__container {
+  .introduce {
     background: none;
   }
 
@@ -53,10 +53,6 @@
     font-size: 20px;
     color: @color-font--main;
     text-align: left;
-  }
-
-  .introduce__container--inner {
-    max-width: 500px;
   }
 }
 
@@ -74,7 +70,8 @@
     z-index: 0;
   }
 
-  .introduce__container--inner {
+  .introduce__container {
+    max-width: 415px;
     margin: 0;
   }
 }

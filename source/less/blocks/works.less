@@ -1,3 +1,8 @@
+.works {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .works__list {
   display: flex;
   flex-direction: column;
@@ -24,13 +29,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .works {
+    max-width: 710px;
+  }
+
   .works__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .works__item {
+    max-width: 250px;
+    margin: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .works {
+    max-width: 1220px;
+  }
+
   .works__info {
     width: 201px;
     height: 63px;

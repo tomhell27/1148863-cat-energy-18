@@ -1,6 +1,7 @@
 .catalog {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .catalog__item {
@@ -35,5 +36,10 @@
 
   .catalog__item {
     background-color: @color-back--text;
+    max-width: 324px;
   }
+}
+
+@media (min-width: @desktop-width) {
+  max-width: 245px;
 }

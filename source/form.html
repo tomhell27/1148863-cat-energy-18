@@ -10,28 +10,30 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-          alt="Здоровое питание для кошек «CAT ENERGY»">
-      </a>
-      <h2 class="visually-hidden">CAT ENERGY</h2>
-      <button type="button" class="burger">бургер</button>
-      <h2 class="visually-hidden">меню</h2>
+    <div class="header__container">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+            alt="Здоровое питание для кошек «CAT ENERGY»">
+        </a>
+        <h2 class="visually-hidden">CAT ENERGY</h2>
+        <button type="button" class="burger">бургер</button>
+        <h2 class="visually-hidden">меню</h2>
+      </div>
+      <nav class="header__menu">
+        <ul class="site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html" class="site-list__link">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">КАТАЛОГ ПРОДУКЦИИ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">ПОДБОР ПРОГРАММЫ</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="header__menu">
-      <ul class="site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html" class="site-list__link">ГЛАВНАЯ</a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">КАТАЛОГ ПРОДУКЦИИ</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link">ПОДБОР ПРОГРАММЫ</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main">
     <div class="container">
@@ -101,28 +103,34 @@
     </section>
     <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
     <section class="footer__info">
-      <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
-      <ul class="footer__smm-list smm-list">
-        <li class="smm-list__item">
-          <a href="#">vk
-          </a>
-        </li>
-        <li class="smm-list__item">
-          <a href="#">inst
-          </a>
-        </li>
-        <li class="smm-list__item">
-          <a href="#">fb
-          </a>
-        </li>
-      </ul>
-      <p class="footer__html-academy html-academy">
-        HTML Academy
-        <a href="https://htmlacademy.ru">
-          <img class="html-academy__logo" alt="HTML Academy" src="img/htmlacademy.svg" width="27" height="34">
-        </a>
-      </p>
+      <div class="footer__container">
+        <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
+        <ul class="footer__smm-list smm-list">
+          <li class="smm-list__item">
+            <a href="#">vk
+            </a>
+          </li>
+          <li class="smm-list__item">
+            <a href="#">inst
+            </a>
+          </li>
+          <li class="smm-list__item">
+            <a href="#">fb
+            </a>
+          </li>
+        </ul>
+        <div class="html-academy">
+          <p class="html-academy__p">
+            HTML Academy
+
+            <a href="https://htmlacademy.ru">
+              <img class="html-academy__logo" alt="HTML Academy" src="img/htmlacademy.svg" width="27" height="34">
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
+
   </footer>
 
 </body>

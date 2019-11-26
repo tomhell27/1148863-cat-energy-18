@@ -1,7 +1,9 @@
 .program-choice {
   display: flex;
   flex-direction: column;
-  background-color: @color-back--text;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .program-choice__get {
@@ -14,6 +16,7 @@
 
 .program-choice__item {
   list-style-type: none;
+  background-color: @color-back--text;
 }
 
 .program-choice__item-head {
@@ -32,8 +35,19 @@
   color: @color-font--arial;
 }
 
+@media (min-width: @tablet-width) {
+  .program-choice {
+    max-width: 710px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .program-choice {
     flex-direction: row;
+    max-width: 1220px;
+  }
+
+  .program-choice__item {
+    max-width: 570px;
   }
 }
