@@ -1,0 +1,40 @@
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin: auto;
+}
+
+.header__wrapper {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .header__container {
+    flex-direction: row;
+    max-width: 710px;
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__container {
+    max-width: 1220px;
+    position: relative;
+    background: none;
+    z-index: 2;
+  }
+
+  .header__menu {
+    flex-grow: 0;
+  }
+}

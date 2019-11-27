@@ -22,3 +22,14 @@
   color: @color-font--arial;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .more-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .more-info__show {
+    background-color: @color-back--text;
+  }
+}

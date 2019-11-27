@@ -1,3 +1,9 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .catalog__item {
   font-family: @font-family--oswald;
   list-style-type: none;
@@ -20,4 +26,20 @@
 .catalog__item-img {
   width: 140px;
   height: 144px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    background-color: @color-back--text;
+    max-width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  max-width: 245px;
 }

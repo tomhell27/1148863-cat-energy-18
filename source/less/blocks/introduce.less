@@ -8,10 +8,15 @@
 }
 
 .introduce {
-  position: relative;
-  background-color: @color-button;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-color: @color-button;
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.introduce__container {
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 .introduce__info {
@@ -21,4 +26,52 @@
   font-size: 14px;
   color: @color-back--main;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .introduce__container {
+    max-width: 710px;
+  }
+
+  .introduce__head {
+    width: 450px;
+    font-family: @font-family--oswald;
+    font-weight: normal;
+    line-height: 60px;
+    font-size: 60px;
+    color: @color-font--main;
+    text-align: left;
+  }
+
+  .introduce {
+    background: none;
+  }
+
+  .introduce__info {
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 20px;
+    color: @color-font--main;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introduce::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -60px;
+    width: 50%;
+    height: 696px;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    z-index: 0;
+  }
+
+  .introduce__container {
+    max-width: 415px;
+    margin: 0;
+  }
 }
