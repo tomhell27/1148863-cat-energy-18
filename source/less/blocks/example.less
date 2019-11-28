@@ -2,6 +2,13 @@
   background-color: @color-back--text;
 }
 
+.example__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .example__title {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -54,4 +61,17 @@
 
 .example__cat--was {
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    max-width: 710px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    max-width: 1220px;
+    flex-direction: row;
+  }
 }

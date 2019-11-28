@@ -1,0 +1,15 @@
+.cat-addition__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-addition__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cat-addition__item {
+    width: 260px;
+  }
+}

@@ -1,6 +1,4 @@
 .present {
-  width: 280px;
-  height: 289px;
   background-color: @color-button;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   text-align: center;
@@ -11,4 +9,12 @@
   font-size: 16px;
   line-height: 20px;
   color: @color-back--main;
+  width: 159px;
+  margin: auto;
+}
+
+@media (min-width: @desktop-width) {
+  .present {
+    max-width: 245px;
+  }
 }

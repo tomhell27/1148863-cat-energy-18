@@ -1,3 +1,8 @@
+.program-form {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 .program-form__head {
   font-family: @font-family--oswald;
   font-weight: normal;
@@ -22,4 +27,25 @@
   line-height: 16px;
   text-align: left;
   color: @color-font--arial;
+}
+
+.program-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .program-form {
+    max-width: 710px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-form {
+    max-width: 1220px;
+  }
+
+  .program-form__wrapper {
+    flex-direction: row;
+  }
 }
