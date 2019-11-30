@@ -37,7 +37,7 @@
   </header>
   <main class="main">
 
-    <section class="program">
+    <section class="program container">
       <h1 class="main__head">Подбор программы</h1>
       <p class="program__intro">
         Заполните анкету и мы подберем программу питания для вашего кота
@@ -45,7 +45,7 @@
     </section>
 
     <form action="https://echo.htmlacademy.ru" method="post" class="program-form">
-      <div class="program-form__wrapper">
+      <div class="program-form__wrapper container">
         <fieldset class="cat-data">
           <div class="cat-data__wrapper">
             <label for="cat-name" class="cat-data__label program-form__data">Имя:*</label>
@@ -77,7 +77,7 @@
       </div>
       <fieldset class="owner-data">
         <h2 class="program-form__head">Контактные данные (владельца кота)</h2>
-        <div class="owner-data__wrapper">
+        <div class="owner-data__wrapper container">
           <p class="owner-data__mail">
             <label for="mail" class="program-form__data">e-mail:*</label>
             <input type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
@@ -92,12 +92,14 @@
       </fieldset>
       <fieldset class="cat-info">
         <label for="about" class="program-form__head">Комментарий</label>
-        <textarea id="about" name="about-cat" rows="5" class="cat-info__text program-form__data">расскажите обо всех повадках кота
+
+        <textarea id="about" name="about-cat" rows="5" class="program-form__data">расскажите обо всех повадках кота
           </textarea>
+
       </fieldset>
       <fieldset class="cat-addition">
         <h2 class="program-form__head">Дополнительно</h2>
-        <div class="cat-addition__wrapper">
+        <div class="cat-addition__wrapper container">
           <div class="cat-addition__item">
             <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check">
             <label for="sugar" class="cat-addition__label program-form__data ">Сахарозаменитель</label>
@@ -116,8 +118,10 @@
           </div>
         </div>
       </fieldset>
-      <button type="submit" class="button">Отправить заявку</button>
-      <p class="program-form__nb">*-- Обязательные поля</p>
+      <div class="container">
+        <button type="submit" class="button">Отправить заявку</button>
+        <p class="program-form__nb">*-- Обязательные поля</p>
+      </div>
     </form>
 
   </main>
@@ -128,7 +132,7 @@
     </section>
     <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
     <section class="footer__info">
-      <div class="footer__container">
+      <div class="footer__container container">
         <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
         <ul class="footer__smm-list smm-list">
           <li class="smm-list__item">
