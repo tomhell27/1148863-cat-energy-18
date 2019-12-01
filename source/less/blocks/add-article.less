@@ -1,5 +1,8 @@
 .add-article {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .add-article__title {
@@ -18,4 +21,11 @@
   line-height: 14px;
   text-align: left;
   color: @color-font--arial;
+}
+
+@media (min-width: @tablet-width) {
+  .add-article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

@@ -2,6 +2,11 @@
   background-color: @color-back--text;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__title {
   font-family: @font-family--oswald;
   font-size: 36px;
@@ -54,4 +59,20 @@
 
 .example__cat--was {
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 60%, @color-back--text 40%, @color-back--text);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 50%, @color-back--text 50%, @color-back--text);
+  }
+
+  .example__wrapper {
+    flex-direction: row;
+  }
 }

@@ -14,6 +14,9 @@
   line-height: 18px;
   color: @color-font--black;
   text-align: left;
+  width: 280px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 .program-form__nb {
@@ -22,4 +25,26 @@
   line-height: 16px;
   text-align: left;
   color: @color-font--arial;
+}
+
+.program-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .program-form__data {
+    width: 631px;
+    height: 174px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-form__data {
+    width: 1220px;
+  }
+
+  .program-form__wrapper {
+    flex-direction: row;
+  }
 }
