@@ -1,6 +1,11 @@
+.works {
+  padding: 0;
+}
+
 .works__list {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .works__head {
@@ -13,6 +18,8 @@
 
 .works__item {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .works__info {
@@ -21,18 +28,34 @@
   line-height: 18px;
   text-align: left;
   color: @color-font--arial;
+  width: 190px;
+}
+
+.works__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: @color-button;
+  margin: auto;
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .works__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .works__item {
-    max-width: 250px;
+    width: 300px;
     margin: auto;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .works__icon {
+    margin: auto;
+    margin-left: 0;
   }
 }
 

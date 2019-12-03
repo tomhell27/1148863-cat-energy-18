@@ -10,30 +10,32 @@
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
-            alt="Здоровое питание для кошек «CAT ENERGY»">
-        </a>
-        <h2 class="visually-hidden">CAT ENERGY</h2>
-        <button type="button" class="burger">бургер</button>
-        <h2 class="visually-hidden">меню</h2>
-      </div>
-      <nav class="header__menu">
-        <ul class="site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html" class="site-list__link">ГЛАВНАЯ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">КАТАЛОГ ПРОДУКЦИИ</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__link">ПОДБОР ПРОГРАММЫ</a>
-          </li>
-        </ul>
-      </nav>
+
+    <div class="header__wrapper">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39"
+          alt="Здоровое питание для кошек «CAT ENERGY»">
+      </a>
+      <h2 class="visually-hidden">CAT ENERGY</h2>
+      <button type="button" class="burger  burger--no-js">
+        <span class="burger__element"></span>
+      </button>
+      <h2 class="visually-hidden">меню</h2>
     </div>
+    <nav class="header__menu">
+      <ul class="site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html" class="site-list__link">ГЛАВНАЯ</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link">КАТАЛОГ ПРОДУКЦИИ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html" class="site-list__link">ПОДБОР ПРОГРАММЫ</a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
   <main class="main">
     <div class="container">
@@ -47,8 +49,7 @@
           </a>
           <a href="/page1">
             <h2 class="catalog__head">
-              Cat Energy
-              PRO 500 г
+              Cat Energy PRO 500 г
             </h2>
           </a>
           <table class="catalog-description">
@@ -65,7 +66,7 @@
               <td class="catalog-description__item">700 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№2-->
         <li class="catalog__item">
@@ -92,7 +93,7 @@
               <td class="catalog-description__item">1000 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№3-->
         <li class="catalog__item">
@@ -119,7 +120,7 @@
               <td class="catalog-description__item">700 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№4-->
         <li class="catalog__item">
@@ -146,7 +147,7 @@
               <td class="catalog-description__item">1000 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№5-->
         <li class="catalog__item">
@@ -174,7 +175,7 @@
               <td class="catalog-description__item">400 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№6-->
         <li class="catalog__item">
@@ -202,7 +203,7 @@
               <td class="catalog-description__item">700 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <!--№7-->
         <li class="catalog__item">
@@ -229,7 +230,7 @@
               <td class="catalog-description__item">500 р</td>
             </tr>
           </table>
-          <a href="#" class="button">ЗАКАЗАТЬ</a>
+          <a href="#" class="button catalog__button">ЗАКАЗАТЬ</a>
         </li>
         <li class="catalog__item more-info">
 
@@ -307,7 +308,9 @@
     <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
     <section class="footer__info">
       <div class="footer__container container">
-        <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
+        <a class="footer__go">
+          <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
+        </a>
         <ul class="footer__smm-list smm-list">
           <li class="smm-list__item">
             <a href="#">vk

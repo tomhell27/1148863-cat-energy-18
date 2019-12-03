@@ -5,3 +5,27 @@
   text-align: left;
   color: @color-font--arial;
 }
+
+.catalog-description .catalog-description__item:first-child {
+  padding-right: 30px;/*нужно 71*/
+}
+
+.catalog-description .catalog-description__item:last-child {
+  padding-right: 10px;/*нужно 19*/
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-description .catalog-description__item:first-child {
+    padding-right: 146px;
+  }
+
+  .catalog-description__item {
+    border-bottom: 1px solid @color-border;
+  }
+
+  .catalog-description {
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 40px;
+  }
+}

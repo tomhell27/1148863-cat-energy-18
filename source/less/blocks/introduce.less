@@ -8,10 +8,9 @@
 }
 
 .introduce {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: @color-button;
-  background-repeat: no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 100%;
+  background-position-y: -50px;
 }
 
 .introduce__container {
@@ -31,6 +30,7 @@
 @media (min-width: @tablet-width) {
   .introduce__container {
     max-width: 710px;
+    position: relative;
   }
 
   .introduce__head {
@@ -54,6 +54,11 @@
     color: @color-font--main;
     text-align: left;
   }
+
+  .introduce__button {
+    position: absolute;
+    left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -65,9 +70,14 @@
     width: 50%;
     height: 696px;
     background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: @color-button;
     background-repeat: no-repeat;
     background-size: 720px 696px;
     z-index: 0;
+  }
+
+  .introduce__button {
+    position: static;
   }
 
   .introduce {
@@ -75,7 +85,18 @@
   }
 
   .introduce__container {
+    display: flex;
+    flex-direction: column;
     width: 415px;
     margin: 0 auto;
+  }
+
+  .introduce__img {
+    position: relative;
+    z-index: 6;
+    right: 50px;
+    order: 4;
+    left: 500px;
+    bottom: 200px;
   }
 }
