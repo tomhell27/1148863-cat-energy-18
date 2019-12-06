@@ -1,16 +1,17 @@
+.introduce {
+  margin-top: 0;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position-y: top;
+  background-size: 100% 305px;
+}
+
 .introduce__head {
   font-family: @font-family--oswald;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 36px;
   font-size: 36px;
   color: @color-back--main;
   text-align: center;
-}
-
-.introduce {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-size: 100%;
-  background-position-y: -50px;
 }
 
 .introduce__container {
@@ -27,8 +28,14 @@
   text-align: center;
 }
 
+.introduce__img {
+  margin: auto;
+  margin-top: 10px;
+}
+
 @media (min-width: @tablet-width) {
   .introduce__container {
+    margin-left: 110px;
     max-width: 710px;
     position: relative;
   }
@@ -56,28 +63,20 @@
   }
 
   .introduce__button {
+    margin-top: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
     position: absolute;
     left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .introduce::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: -60px;
-    width: 50%;
-    height: 696px;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-color: @color-button;
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
-    z-index: 0;
-  }
-
   .introduce__button {
     position: static;
+    margin-left: 0;
   }
 
   .introduce {
@@ -98,5 +97,10 @@
     order: 4;
     left: 500px;
     bottom: 200px;
+  }
+
+  .introduce__head {
+    margin-top: 90px;
+    margin-bottom: 20px;
   }
 }

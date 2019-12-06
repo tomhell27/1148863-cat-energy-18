@@ -1,56 +1,52 @@
-.burger {
-  width: 30px;
-  height: 30px;
+/*.burger {
+  width: 25px;
+  height: 20px;
   cursor: pointer;
   margin: auto;
   position: relative;
+  display: inline-block;
   border: none;
-  background: transparent;
+  border-top: 2px solid @color-font--main;
+  border-bottom: 2px solid @color-font--main;
+  text-shadow: 0 1px 0 @color-font--main;
 }
 
-.burger__element,
-.burger__element::before,
-.burger__element::after {
+.burger::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 25px;
+  top: 7px;
+  left: 0px;
+  width: 100%;
+  border-top: 2px solid @color-font--main;
+}*/
+
+.burger--no-js {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  border: none;
+  margin-left: 55px;
+}
+
+.burger--no-js::after,
+.burger--no-js::before {
+  position: absolute;
+  content: "";
   height: 2px;
+  width: 27px;
   background-color: @color-font--main;
 }
 
-.burger__element::before,
-.burger__element::after {
-  content: "";
-  transition: 0.5s;
+.burger--no-js::after {
+  transform: rotate(45deg);
 }
 
-.burger__element::before {
-  transform: translateY(-10px);
+.burger--no-js::before {
+  transform: rotate(-45deg);
 }
-
-.burger__element::after {
-  transform: translateY(10px);
-}
-/*
-.burger--active .burger__element::after {
-  transform: rotate (-45deg);
-}
-
-.burger--active .burger__element::before {
-  transform: rotate (45deg);
-}
-
-.burger--active ,.burger__element {
-  opacity: 1;
-}
-*/
-
-/*
-.burger--no-js {
-  display: none;
-}
-*/
 
 @media (min-width: @tablet-width) {
   .burger {
