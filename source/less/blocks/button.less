@@ -13,13 +13,20 @@
   background-color: @color-button;
   padding-top: 10px;
   margin: 0;
+
+  &:hover {
+    background-color: @color-button--hvr;
+  }
+
+  &:active {
+    color: @color-back--opacity;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .button {
     width: 245px;
-    height: 52px;
-    font-size: 20px;
     line-height: 20px;
+    margin: auto;
   }
 }

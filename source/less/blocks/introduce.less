@@ -1,17 +1,19 @@
+.introduce {
+  margin-top: 0;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position-y: -15px;
+  background-size: 100%;
+  padding-top: 23px;
+}
+
 .introduce__head {
   font-family: @font-family--oswald;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 36px;
   font-size: 36px;
   color: @color-back--main;
   text-align: center;
-}
-
-.introduce {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: @color-button;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  margin: 0;
 }
 
 .introduce__container {
@@ -26,11 +28,19 @@
   font-size: 14px;
   color: @color-back--main;
   text-align: center;
+  padding-top: 8px;
+}
+
+.introduce__img {
+  margin: auto;
+  margin-top: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .introduce__container {
+    margin-left: 110px;
     max-width: 710px;
+    position: relative;
   }
 
   .introduce__head {
@@ -45,6 +55,7 @@
 
   .introduce {
     background: none;
+    padding-top: 35px;
   }
 
   .introduce__info {
@@ -53,21 +64,30 @@
     font-size: 20px;
     color: @color-font--main;
     text-align: left;
+    margin-top: 31px;
+  }
+
+  .introduce__button {
+    margin-top: 27px;
+    padding-top: 13px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .introduce::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: -60px;
-    width: 50%;
-    height: 696px;
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 720px 696px;
-    z-index: 0;
+  .introduce__info {
+    margin-top: 15px;
+    padding-top: 4px;
+  }
+
+  .introduce__button {
+    position: static;
+    padding-top: 15px;
+    margin-left: 0;
   }
 
   .introduce {
@@ -75,7 +95,23 @@
   }
 
   .introduce__container {
+    display: flex;
+    flex-direction: column;
     width: 415px;
     margin: 0 auto;
+  }
+
+  .introduce__img {
+    position: relative;
+    z-index: 6;
+    right: 50px;
+    order: 4;
+    left: 500px;
+    bottom: 200px;
+  }
+
+  .introduce__head {
+    margin-top: 59px;
+    margin-bottom: 20px;
   }
 }

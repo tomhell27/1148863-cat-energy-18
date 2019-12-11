@@ -1,7 +1,53 @@
 .burger {
-  background: transparent;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-top: 2px solid @color-font--black;
+  border-bottom: 2px solid @color-font--black;
+  text-shadow: 0 1px 0 @color-font--black;
+  top: 10px;
 }
 
+.burger::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 100%;
+  border-top: 2px solid @color-font--black;
+}
+/*
+.burger--no-js {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+  border: none;
+  margin-left: 55px;
+}
+
+.burger--no-js::after,
+.burger--no-js::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 27px;
+  background-color: @color-font--main;
+}
+
+.burger--no-js::after {
+  transform: rotate(45deg);
+}
+
+.burger--no-js::before {
+  transform: rotate(-45deg);
+}
+*/
 @media (min-width: @tablet-width) {
   .burger {
     display: none;
