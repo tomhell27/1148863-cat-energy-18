@@ -1,4 +1,29 @@
 .cat-info {
   display: flex;
   flex-direction: column;
+  border: none;
+  width: 280px;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.cat-info__head {
+  margin-top: 12px;
+  padding-left: 8px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-info__head {
+    margin-top: 45px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-info__head {
+    margin-top: 49px;
+    padding-left: 35px;
+  }
 }

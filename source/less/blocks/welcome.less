@@ -1,18 +1,21 @@
 .welcome {
   max-width: 280px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 45px;
   display: flex;
 }
 
 .welcome__partnership {
   font-family: @font-family--oswald;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   line-height: 20px;
+  margin-right: 15px;
 }
 
 .welcome__address {
+  width: 213px;
   font-family: @font-family--arial;
   font-size: 14px;
   text-align: left;
@@ -22,6 +25,14 @@
 @media (min-width: @tablet-width) {
   .welcome {
     max-width: 710px;
+    padding-top: 65px;
+  }
+
+  .welcome__partnership {
+    width: 155px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 25px;
   }
 }
 

@@ -1,15 +1,97 @@
+.cat-addition {
+  border: none;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
 .cat-addition__wrapper {
   display: flex;
   flex-direction: column;
 }
 
+.cat-addition__head {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.cat-addition__item {
+  margin-bottom: 6px;
+}
+
+.cat-addition__check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.cat-addition__label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @color-back--catalog;
+  right: 14px;
+  bottom: -9.5px;
+  margin-left: 13px;
+}
+
+.cat-addition__check:checked + .cat-addition__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 17px;
+  background-position: 2px 3px;
+}
+
 @media (min-width: @tablet-width) {
+  .cat-addition {
+    width: 780px;
+  }
+
   .cat-addition__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 95px;
   }
 
   .cat-addition__item {
     width: 260px;
+    margin-top: 30px;
+    margin-right: 82px;
+  }
+
+  .cat-addition__head {
+    margin-top: 33px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-addition {
+    width: 1220px;
+  }
+
+  .cat-addition__head {
+    margin-top: 37px;
+    margin-left: 0;
+  }
+
+  .cat-addition__item {
+    width: 210px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .cat-addition__wrapper {
+    padding-left: 22px;
+    justify-content: space-between;
   }
 }

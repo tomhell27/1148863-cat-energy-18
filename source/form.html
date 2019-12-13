@@ -38,15 +38,15 @@
   </header>
   <main class="main">
 
-    <section class="program container">
-      <h1 class="main__head">Подбор программы</h1>
+    <section class="program">
+      <h1 class="main__head main__head--form">Подбор программы</h1>
       <p class="program__intro">
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
     </section>
 
     <form action="https://echo.htmlacademy.ru" method="post" class="program-form">
-      <div class="program-form__wrapper container">
+      <div class="program-form__wrapper">
         <fieldset class="cat-data">
           <div class="cat-data__wrapper">
             <label for="cat-name" class="cat-data__label program-form__data">Имя:*</label>
@@ -57,49 +57,49 @@
             <input type="text" id="cat-weight" name="weight" placeholder="7" required class="cat-data__name">
           </div>
           <div class="cat-data__wrapper">
-            <label for="cat-age" class="cat-data__label program-form__data">Возраст (лет):*</label>
+            <label for="cat-age" class="cat-data__label program-form__data">Возраст (лет):</label>
             <input type="text" id="cat-age" name="age" placeholder="7" class="cat-data__name">
           </div>
         </fieldset>
         <fieldset class="cat-aspiration">
-          <div>
+          <div class="cat-aspiration__wrapper">
             <input type="radio" id="slim" name="aspiration" value="slim" checked class="cat-aspiration__check">
             <label for="slim" class="cat-aspiration__label program-form__data">Похудение</label>
           </div>
-          <div>
+          <div class="cat-aspiration__wrapper">
             <input type="radio" id="pro" name="aspiration" value="pro" class="cat-aspiration__check">
             <label for="pro" class="cat-aspiration__label program-form__data">Набор массы</label>
           </div>
-          <div>
+          <div class="cat-aspiration__wrapper">
             <input type="radio" id="help" name="aspiration" value="help" class="cat-aspiration__check">
             <label for="help" class="cat-aspiration__label program-form__data">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
       </div>
-      <fieldset class="owner-data">
-        <h2 class="program-form__head">Контактные данные (владельца кота)</h2>
+      <fieldset class="owner-data container">
+        <h2 class="program-form__head program-form__head--decoration owner-data__head">Контактные данные (владельца кота)</h2>
         <div class="owner-data__wrapper container">
           <p class="owner-data__mail">
             <label for="mail" class="program-form__data">e-mail:*</label>
-            <input type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+            <input class="owner-data__name" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
             <!--картинка-->
           </p>
           <p class="owner-data__phone">
             <label for="phone" class="program-form__data">Телефон:*</label>
-            <input type="tel" id="phone" name="owner-phone" placeholder="8(960)900-60-90" required>
+            <input class="owner-data__name" type="tel" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90" required>
             <!--картинка-->
           </p>
         </div>
       </fieldset>
       <fieldset class="cat-info">
-        <label for="about" class="program-form__head">Комментарий</label>
+        <label for="about" class="program-form__head program-form__head--decoration cat-info__head">Комментарий</label>
 
-        <textarea id="about" name="about-cat" rows="5" class="program-form__data">расскажите обо всех повадках кота
+        <textarea id="about" name="about-cat" rows="5" class="program-form__data program-form__data--about-cat">расскажите обо всех повадках кота
           </textarea>
 
       </fieldset>
       <fieldset class="cat-addition">
-        <h2 class="program-form__head">Дополнительно</h2>
+        <h2 class="program-form__head cat-addition__head program-form__head--decoration">Дополнительно</h2>
         <div class="cat-addition__wrapper container">
           <div class="cat-addition__item">
             <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check">
@@ -119,19 +119,19 @@
           </div>
         </div>
       </fieldset>
-      <div class="container">
-        <button type="submit" class="button">Отправить заявку</button>
-        <p class="program-form__nb">*-- Обязательные поля</p>
+      <div class="container container__nb">
+        <button type="submit" class="button program-form__button">Отправить заявку</button>
+        <p class="program-form__nb">* — Обязательные поля</p>
       </div>
     </form>
 
   </main>
   <footer class="footer">
     <section class="welcome">
-      <p class="welcome__partnership">Приглашаем к сотрудничеству диллеров!</p>
+      <p class="welcome__partnership">Приглашаем <br> к сотрудничеству дилеров!</p>
       <p class="welcome__address">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
-    <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
+    <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="380" alt="«CAT ENERGY»">
     <section class="footer__info">
       <div class="footer__container container">
         <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">

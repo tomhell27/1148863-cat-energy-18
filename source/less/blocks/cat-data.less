@@ -1,4 +1,39 @@
 .cat-data {
   display: flex;
   flex-direction: column;
+  border: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.cat-data__name {
+  border: 1px solid @color-back--catalog;
+  height: 45px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  margin-left: 15px;
+}
+
+.cat-data__wrapper {
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-data {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 0;
+    padding-top: 31px;
+  }
+
+  .cat-data__wrapper {
+    margin-bottom: 23px;
+    margin-left: 10px;
+  }
+
+  .cat-data__name {
+    padding-left: 15px;
+    width: 450px;
+  }
 }
