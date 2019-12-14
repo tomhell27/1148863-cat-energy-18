@@ -4,4 +4,38 @@
   text-align: left;
   line-height: 24px;
   font-weight: normal;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 12px;
+}
+
+.add-title::after {
+  content: " ";
+  position: relative;
+  top: 15px;
+  min-width: 20px;
+  height: 3px;
+  background-color: @color-button;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 110px;
+  }
+
+  .add-title::before {
+    content: " ";
+    position: absolute;
+    left: 40px;
+    min-width: 20px;
+    height: 3px;
+    background-color: @color-button;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
 }
