@@ -77,9 +77,11 @@
           </div>
         </fieldset>
       </div>
+      <h2 class="program-form__head program-form__head--decoration program-form__head--owner">Контактные данные
+        (владельца
+        кота)</h2>
       <fieldset class="owner-data">
-        <h2 class="program-form__head program-form__head--decoration owner-data__head">Контактные данные (владельца
-          кота)</h2>
+
         <div class="owner-data__wrapper">
           <p class="owner-data__mail">
             <label for="mail" class="program-form__data owner-data__info">e-mail:*</label>
@@ -95,15 +97,18 @@
           </p>
         </div>
       </fieldset>
-      <fieldset class="cat-info">
-        <label for="about" class="program-form__head program-form__head--decoration cat-info__head">Комментарий</label>
+      <label for="about"
+        class="program-form__head program-form__head--decoration program-form__head--cat">Комментарий</label>
+      <fieldset class="cat-info container">
+
 
         <textarea id="about" name="about-cat" rows="5" class="program-form__data program-form__data--about-cat">расскажите обо всех повадках кота
           </textarea>
 
       </fieldset>
+      <h2 class="program-form__head program-form__head--addition program-form__head--decoration">Дополнительно</h2>
       <fieldset class="cat-addition">
-        <h2 class="program-form__head cat-addition__head program-form__head--decoration">Дополнительно</h2>
+
         <div class="cat-addition__wrapper container">
           <div class="cat-addition__item">
             <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check visually-hidden">
@@ -123,7 +128,7 @@
           </div>
         </div>
       </fieldset>
-      <div class="container container__nb">
+      <div class="program-form__container-nb">
         <button type="submit" class="button program-form__button">Отправить заявку</button>
         <p class="program-form__nb">* — Обязательные поля</p>
       </div>
@@ -133,7 +138,8 @@
   <footer class="footer">
     <section class="welcome">
       <p class="welcome__partnership">Приглашаем <br> к сотрудничеству дилеров!</p>
-      <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 <span
+          class="welcome__address-spb">Санкт-Петербург</span></p>
     </section>
     <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="380" alt="«CAT ENERGY»">
     <section class="footer__info">

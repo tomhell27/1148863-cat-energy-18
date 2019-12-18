@@ -72,6 +72,27 @@
   margin-left: 15px;
 }
 
+
+.program-form__head--owner {
+  margin-bottom: 10px;
+  margin-top: 21px;
+}
+
+.program-form__head--cat {
+  margin-top: 12px;
+  padding-left: 8px;
+}
+
+.program-form__head--addition {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.program-form__container-nb {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .program-form__data {
     width: 631px;
@@ -108,7 +129,7 @@
 
   .program-form__data--about-cat {
     padding-top: 58px;
-    padding-left: 42px;
+    padding-left: 50px;
   }
 
   .program-form__nb {
@@ -126,9 +147,46 @@
     margin-left: 45px;
     margin-right: 0;
   }
+
+  .program-form__head--owner {
+    display: flex;
+    margin-top: 65px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 55px;
+    padding-left: 0;
+  }
+
+  .program-form__head--cat {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 36px;
+    width: 768px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .program-form__head--addition {
+    margin-top: 33px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 21px;
+  }
+
+  .program-form__container-nb {
+    max-width: 720px;
+    display: flex;
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .program-form {
+    width: auto;
+  }
+
   .program-form__button {
     height: 52px;
     padding-top: 13px;
@@ -146,15 +204,20 @@
   .program-form__wrapper {
     flex-direction: row;
     max-width: 1220px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .program-form__head--decoration {
     padding-left: 0;
+    width: auto;
   }
 
   .program-form__data--about-cat {
-    padding-left: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-top: 37px;
+    padding-left: 60px;
+    padding-top: 17px;
   }
 
   .program-form__nb {
@@ -162,6 +225,31 @@
   }
 
   .program-form__head--decoration::before {
-    min-width: 65px;
+    min-width: 5px;
+    max-width: 65px;
+    flex-grow: 1;
+  }
+
+
+  .program-form__head--owner {
+    width: auto;
+    margin-top: 47px;
+    margin-bottom: 55px;
+  }
+
+  .program-form__head--cat {
+    margin-top: 65px;
+    width: auto;
+  }
+
+  .program-form__head--addition {
+    margin-top: 37px;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .program-form__container-nb {
+    max-width: 1220px;
+    margin-top: 50px;
   }
 }
