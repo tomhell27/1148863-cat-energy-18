@@ -91,14 +91,19 @@
 
   .program-form__head--decoration::before {
     content: " ";
-    position: absolute;
-    top: 15px;
-    left: -50px;
-    min-width: 40px;
+    position: relative;
+    top: 21px;
+    min-width: 30px;
     height: 3px;
     background-color: @color-button;
-    flex-grow: 1;
     flex-shrink: 0;
+    margin-right: 39px;
+  }
+
+  .program-form__head--decoration::after {
+    top: 21px;
+    min-width: 80px;
+    margin-left: 41px;
   }
 
   .program-form__data--about-cat {
@@ -111,6 +116,16 @@
     line-height: 16px;
     margin-right: 82px;
   }
+
+  .program-form__button {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+    margin-left: 45px;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -121,7 +136,7 @@
     font-size: 20px;
     line-height: 20px;
     width: 568px;
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   .program-form__data {
@@ -131,17 +146,22 @@
   .program-form__wrapper {
     flex-direction: row;
     max-width: 1220px;
+    margin: 0;
   }
 
   .program-form__head--decoration {
-    padding-left: 10px;
+    padding-left: 0;
   }
 
   .program-form__data--about-cat {
-    padding-left: 55px;
+    padding-left: 30px;
   }
 
   .program-form__nb {
     margin-right: 375px;
+  }
+
+  .program-form__head--decoration::before {
+    min-width: 65px;
   }
 }

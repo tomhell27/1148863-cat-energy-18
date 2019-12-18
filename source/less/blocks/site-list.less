@@ -42,7 +42,9 @@
 @media (min-width: @tablet-width) {
   .site-list {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 440px;
+    margin-left: 70px;
   }
 
   .site-list__link {
@@ -56,14 +58,14 @@
   .site-list__item {
     border: none;
   }
-
-  .site-list__item:nth-child(2) {
-    margin-left: 31px;
-    margin-right: 38px;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    width: 480px;
+    margin-left: 120px;
+  }
+
   .site-list__item:nth-child(2) {
     margin: 0;
     margin-left: 32px;

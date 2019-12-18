@@ -1,5 +1,4 @@
 .cat-aspiration {
-  border: none;
   padding: 0;
   margin-top: 35px;
   margin-bottom: 13px;
@@ -13,17 +12,6 @@
 
 .cat-aspiration__label {
   margin-left: 37px;
-}
-
-.cat-aspiration__check {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .cat-aspiration__label::before {
@@ -53,11 +41,14 @@
 
 @media (min-width: @tablet-width) {
   .cat-aspiration__label {
-    margin-left: 106px;
+    margin-left: 57px;
   }
 
   .cat-aspiration {
-    margin-top: 85px;
+    margin-top: 51px;
+    padding-top: 32px;
+    width: 630px;
+    margin-left: 46px;
   }
 
   .cat-aspiration__wrapper {
@@ -65,7 +56,6 @@
   }
 
   .cat-aspiration__label::before {
-    left: 50px;
     width: 20px;
     height: 20px;
     bottom: 0;
@@ -74,6 +64,7 @@
 
 @media (min-width: @desktop-width) {
   .cat-aspiration {
-    margin-top: 65px;
+    margin-top: 30px;
+    margin-left: 65px;
   }
 }

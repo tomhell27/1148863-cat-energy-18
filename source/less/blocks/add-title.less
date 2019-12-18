@@ -6,7 +6,8 @@
   font-weight: normal;
   display: flex;
   justify-content: flex-start;
-  margin-left: 12px;
+  margin-left: 20px;
+  margin-top: 41px;
 }
 
 .add-title::after {
@@ -23,19 +24,41 @@
 
 @media (min-width: @tablet-width) {
   .add-title {
+    margin-top: 95px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: 110px;
+    margin-left: 0;
   }
 
   .add-title::before {
     content: " ";
-    position: absolute;
-    left: 40px;
-    min-width: 20px;
+    min-width: 28px;
     height: 3px;
     background-color: @color-button;
-    flex-grow: 1;
-    flex-shrink: 0;
+    margin-top: 22px;
+    margin-right: 41px;
+  }
+
+  .add-title::after {
+    top: 21px;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-title {
+    margin-left: 0;
+    margin-bottom: 31px;
+  }
+
+  .add-title::before {
+    min-width: 56px;
+    margin-left: 0;
+    margin-top: 22px;
+    margin-right: 46px;
+  }
+
+  .add-title::after {
+    margin-left: 35px;
   }
 }
