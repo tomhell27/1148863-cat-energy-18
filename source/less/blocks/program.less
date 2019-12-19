@@ -1,8 +1,41 @@
+.program {
+  max-width: 280px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
 .program__intro {
+  width: 230px;
   font-family: @font-family--oswald;
   text-align: left;
   color: @color-font--main;
   line-height: 18px;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .program {
+    max-width: 710px;
+  }
+
+  .program__intro {
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 55px;
+    padding-left: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .program__intro {
+    padding-left: 0;
+  }
 }

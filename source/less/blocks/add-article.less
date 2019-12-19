@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-bottom: 7px;
+  border-top: 1px solid @color-back--catalog;
 }
 
 .add-article__title {
@@ -13,19 +15,122 @@
   font-size: 16px;
   line-height: 16px;
   text-align: left;
+  margin-top: 24px;
+  margin-bottom: 11px;
+  padding-left: 5px;
 }
 
 .add-article__item {
   font-family: @font-family--arial;
   font-size: 14px;
   line-height: 14px;
-  text-align: left;
   color: @color-font--arial;
 }
 
+.add-article__table {
+  width: 290px;
+  margin-bottom: 10px;
+}
+
+.add-article__line .add-article__item:first-child {
+  text-align: left;
+}
+
+.add-article__line .add-article__item:nth-child(2) {
+  text-align: right;
+}
+
+.add-article__order {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  padding-left: 3px;
+}
+
 @media (min-width: @tablet-width) {
+  .add-article__title {
+    font-size: 20px;
+    line-height: 20px;
+    width: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .add-article {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 635px;
+    margin-bottom: 9px;
+    padding-top: 20px;
+  }
+
+  .add-article__order {
+    width: 630px;
+    margin-bottom: 20px;
+  }
+
+  .add-article__item {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .add-article__table {
+    width: 305px;
+    margin-bottom: 21px;
+  }
+
+  .add-article__line .add-article__item:first-child {
+    width: 200px;
+    text-align: right;
+  }
+
+  .add-article__line .add-article__item:last-child {
+    width: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add-article__order {
+    width: 245px;
+    margin-bottom: 0;
+    padding-top: 9px;
+    padding-bottom: 0;
+  }
+
+  .add-article {
+    flex-wrap: nowrap;
+    margin-left: 60px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    width: 895px;
+    border-top: 1px solid @color-font--black;
+  }
+
+  .add-article__table {
+    flex-grow: 1;
+    padding-top: 0;
+    width: 295px;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+
+  .add-article__line .add-article__item:first-child {
+    text-align: left;
+  }
+
+  .add-article__title {
+    width: 321px;
+    padding-top: 0;
+  }
+
+  .add-article:last-child {
+    border-bottom: 1px solid @color-font--black;
+  }
+
+  .add-article__item {
+    padding-top: 5px;
   }
 }

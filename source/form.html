@@ -38,100 +38,110 @@
   </header>
   <main class="main">
 
-    <section class="program container">
-      <h1 class="main__head">Подбор программы</h1>
+    <section class="program">
+      <h1 class="main__head main__head--form">Подбор программы</h1>
       <p class="program__intro">
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
     </section>
 
     <form action="https://echo.htmlacademy.ru" method="post" class="program-form">
-      <div class="program-form__wrapper container">
+      <div class="program-form__wrapper">
         <fieldset class="cat-data">
           <div class="cat-data__wrapper">
-            <label for="cat-name" class="cat-data__label program-form__data">Имя:*</label>
+            <label for="cat-name" class="cat-data__label">Имя:*</label>
             <input type="text" id="cat-name" name="name" placeholder="Барсик" required class="cat-data__name">
           </div>
           <div class="cat-data__wrapper">
-            <label for="cat-weight" class="cat-data__label program-form__data ">Вес (кг):*</label>
+            <label for="cat-weight" class="cat-data__label">Вес (кг):*</label>
             <input type="text" id="cat-weight" name="weight" placeholder="7" required class="cat-data__name">
           </div>
           <div class="cat-data__wrapper">
-            <label for="cat-age" class="cat-data__label program-form__data">Возраст (лет):*</label>
+            <label for="cat-age" class="cat-data__label">Возраст (лет):</label>
             <input type="text" id="cat-age" name="age" placeholder="7" class="cat-data__name">
           </div>
         </fieldset>
-        <fieldset class="cat-aspiration">
-          <div>
-            <input type="radio" id="slim" name="aspiration" value="slim" checked class="cat-aspiration__check">
+        <fieldset class="cat-aspiration ">
+          <div class="cat-aspiration__wrapper">
+            <input type="radio" id="slim" name="aspiration" value="slim" checked
+              class="cat-aspiration__check visually-hidden">
             <label for="slim" class="cat-aspiration__label program-form__data">Похудение</label>
           </div>
-          <div>
-            <input type="radio" id="pro" name="aspiration" value="pro" class="cat-aspiration__check">
+          <div class="cat-aspiration__wrapper">
+            <input type="radio" id="pro" name="aspiration" value="pro" class="cat-aspiration__check visually-hidden">
             <label for="pro" class="cat-aspiration__label program-form__data">Набор массы</label>
           </div>
-          <div>
-            <input type="radio" id="help" name="aspiration" value="help" class="cat-aspiration__check">
+          <div class="cat-aspiration__wrapper">
+            <input type="radio" id="help" name="aspiration" value="help" class="cat-aspiration__check visually-hidden">
             <label for="help" class="cat-aspiration__label program-form__data">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
       </div>
+      <h2 class="program-form__head program-form__head--decoration program-form__head--owner">Контактные данные
+        (владельца
+        кота)</h2>
       <fieldset class="owner-data">
-        <h2 class="program-form__head">Контактные данные (владельца кота)</h2>
-        <div class="owner-data__wrapper container">
+
+        <div class="owner-data__wrapper">
           <p class="owner-data__mail">
-            <label for="mail" class="program-form__data">e-mail:*</label>
-            <input type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+            <label for="mail" class="program-form__data owner-data__info">e-mail:*</label>
+            <input class="owner-data__name" type="email" id="mail" name="owner-mail" placeholder="kuklachev@gmail.com"
+              required>
             <!--картинка-->
           </p>
           <p class="owner-data__phone">
-            <label for="phone" class="program-form__data">Телефон:*</label>
-            <input type="tel" id="phone" name="owner-phone" placeholder="8(960)900-60-90" required>
+            <label for="phone" class="program-form__data owner-data__info">Телефон:*</label>
+            <input class="owner-data__name" type="tel" id="phone" name="owner-phone" placeholder="8 (960) 900-60-90"
+              required>
             <!--картинка-->
           </p>
         </div>
       </fieldset>
-      <fieldset class="cat-info">
-        <label for="about" class="program-form__head">Комментарий</label>
+      <label for="about"
+        class="program-form__head program-form__head--decoration program-form__head--cat">Комментарий</label>
+      <fieldset class="cat-info container">
 
-        <textarea id="about" name="about-cat" rows="5" class="program-form__data">расскажите обо всех повадках кота
+
+        <textarea id="about" name="about-cat" rows="5" class="program-form__data program-form__data--about-cat">расскажите обо всех повадках кота
           </textarea>
 
       </fieldset>
+      <h2 class="program-form__head program-form__head--addition program-form__head--decoration">Дополнительно</h2>
       <fieldset class="cat-addition">
-        <h2 class="program-form__head">Дополнительно</h2>
+
         <div class="cat-addition__wrapper container">
           <div class="cat-addition__item">
-            <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check">
+            <input type="checkbox" id="sugar" name="add-sugar" checked class="cat-addition__check visually-hidden">
             <label for="sugar" class="cat-addition__label program-form__data ">Сахарозаменитель</label>
           </div>
           <div class="cat-addition__item">
-            <input type="checkbox" id="water" name="add-water" class="cat-addition__check">
+            <input type="checkbox" id="water" name="add-water" class="cat-addition__check visually-hidden">
             <label for="water" class="cat-addition__label program-form__data">Питьевая вода</label>
           </div>
           <div class="cat-addition__item">
-            <input type="checkbox" id="milk" name="add-milk" class="cat-addition__check">
+            <input type="checkbox" id="milk" name="add-milk" class="cat-addition__check visually-hidden">
             <label for="milk" class="cat-addition__label program-form__data">Молоко</label>
           </div>
           <div class="cat-addition__item">
-            <input type="checkbox" id="vitamin" name="add-vitamin" class="cat-addition__check">
+            <input type="checkbox" id="vitamin" name="add-vitamin" class="cat-addition__check visually-hidden">
             <label for="vitamin" class="cat-addition__label program-form__data">Витамины</label>
           </div>
         </div>
       </fieldset>
-      <div class="container">
-        <button type="submit" class="button">Отправить заявку</button>
-        <p class="program-form__nb">*-- Обязательные поля</p>
+      <div class="program-form__container-nb">
+        <button type="submit" class="button program-form__button">Отправить заявку</button>
+        <p class="program-form__nb">* — Обязательные поля</p>
       </div>
     </form>
 
   </main>
   <footer class="footer">
     <section class="welcome">
-      <p class="welcome__partnership">Приглашаем к сотрудничеству диллеров!</p>
-      <p class="welcome__address">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="welcome__partnership">Приглашаем <br> к сотрудничеству дилеров!</p>
+      <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 <span
+          class="welcome__address-spb">Санкт-Петербург</span></p>
     </section>
-    <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
+    <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="380" alt="«CAT ENERGY»">
     <section class="footer__info">
       <div class="footer__container container">
         <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">

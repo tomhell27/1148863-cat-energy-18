@@ -18,12 +18,12 @@
   font-size: 16px;
   text-transform: uppercase;
   display: block;
-  margin-top: 43px;
+  margin-top: 20px;
   margin-bottom: 21px;
 }
 
 .program-choice__item {
-  margin-top: 20px;
+  margin-top: 16px;
   list-style-type: none;
   background-color: @color-back--text;
 }
@@ -34,14 +34,15 @@
   font-weight: normal;
   line-height: 37px;
   text-align: left;
-  margin-top: 22px;
+  margin-top: 34px;
 }
 
 .program-choice__info {
-  margin-top: 0;
+  margin-top: 5px;
   width: 250px;
   padding-top: 6px;
   padding-left: 17px;
+  padding-bottom: 21px;
   font-family: @font-family--arial;
   font-size: 14px;
   line-height: 18px;
@@ -58,9 +59,9 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: @color-button;
-  left: 17px;
-  top: 17px;
-  margin-right: 35px;
+  left: 22px;
+  top: 29px;
+  margin-right: 40px;
 }
 
 .program-choice__section {
@@ -73,7 +74,7 @@
 
 @media (min-width: @tablet-width) {
   .program-choice__item {
-    margin-top: 28px;
+    margin-top: 34px;
   }
 
   .program-choice__wrapper {
@@ -90,12 +91,12 @@
   }
 
   .program-choice__info {
-    width: 340px;
+    width: 380px;
     border: none;
     line-height: 24px;
     font-size: 16px;
-    padding-top: 20px;
-    padding-left: 47px;
+    padding-top: 21px;
+    padding-left: 46px;
   }
 
   .program-choice__item-head {
@@ -110,7 +111,7 @@
     line-height: 20px;
     font-size: 20px;
     padding-left: 46px;
-    margin-top: 60px;
+    margin-top: 35px;
     margin-bottom: 60px;
   }
 
@@ -125,12 +126,13 @@
     justify-content: space-between;
     max-width: 1220px;
     margin: 0 auto;
-    padding-top: 19px;
+    padding-top: 7px;
   }
 
   .program-choice__get {
-    margin-top: 36px;
+    margin-top: 15px;
     margin-left: 7px;
+    padding-left: 48px;
   }
 
   .program-choice__info {
@@ -162,12 +164,17 @@
     width: 100px;
     height: 100px;
     top: 25px;
-    left: 47px;
+    left: 53px;
+    margin-right: 42px;
   }
 
   .program-choice__item-head {
     margin-left: 73px;
     margin-bottom: 75px;
     margin-top: 51px;
+  }
+
+  .program-choice__item:nth-child(2) .program-choice__info {
+    width: 450px;
   }
 }

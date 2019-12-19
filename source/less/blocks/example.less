@@ -1,5 +1,6 @@
 .example {
   background-color: @color-back--text;
+  margin-top: 22px;
 }
 
 .example__wrapper {
@@ -13,6 +14,8 @@
   text-align: left;
   line-height: 60px;
   font-weight: normal;
+  margin-bottom: 23px;
+  margin-top: 25px;
 }
 
 .example__text {
@@ -24,10 +27,12 @@
 }
 
 .example__bold {
+  text-transform: uppercase;
   font-family: @font-family--oswald;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  margin: 0;
 }
 
 .example__small {
@@ -36,6 +41,7 @@
   line-height: 12px;
   text-align: center;
   color: @color-font--arial;
+  width: 57px;
 }
 
 .example__cost {
@@ -44,6 +50,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  margin-top: 29px;
 }
 
 .example__cat {
@@ -61,9 +68,169 @@
   text-align: left;
 }
 
+.example__features {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__description {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  border: 1px solid @color-back--catalog;
+  border-radius: 10%;
+}
+
+.example__description-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+  height: 60px;
+  background-color: @color-back--main;
+  left: 16px;
+  top: 10px;
+}
+
+.example__indicator {
+  width: 196px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+  margin-left: 42px;
+}
+
+.example__indicator::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 6px;
+  border: 4px solid @color-back--text;
+  border-radius: 16%;
+  box-shadow: 0 0 0 2px @color-back--catalog;
+  background-image: linear-gradient(to left, @color-back--main, @color-back--main 50%, @color-button 50%, @color-button);
+  left: 60px;
+  top: 5px;
+}
+
+
+.example__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.example__cat--is:checked + .example__indicator::after {
+  background-image: linear-gradient(to right, @color-back--main, @color-back--main 50%, @color-button 50%, @color-button);
+}
+
+.example__img {
+  margin-top: 25px;
+  position: relative;
+  right: 18px;
+}
+
 @media (min-width: @tablet-width) {
   .example {
     background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 60%, @color-back--text 40%, @color-back--text);
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    margin-top: 48px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 64px;
+  }
+
+  .example__bold {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__small {
+    font-size: 14px;
+    line-height: 14px;
+    width: 170px;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 30px;
+    width: 191px;
+    position: relative;
+    text-align: right;
+    left: 515px;
+    bottom: 102px;
+  }
+
+  .example__cat {
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: dotted 1px;
+  }
+
+  .example__description {
+    width: 162px;
+    height: 72px;
+    margin-right: 40px;
+  }
+
+  .example__description-wrapper {
+    width: 130px;
+    height: 70px;
+  }
+
+  .example__features {
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  .example__indicator {
+    justify-content: space-between;
+    width: 570px;
+  }
+
+  .example__indicator::after {
+    content: "";
+    position: absolute;
+    width: 428px;
+    height: 6px;
+    border: 1px solid @color-back--catalog;
+    border-radius: 15%;
+    box-shadow: none;
+    background-image: none;
+    background-color: @color-back--catalog;
+    left: 65px;
+    top: 10px;
+  }
+
+  .example__cat--was::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: @color-button;
+    border: 12px solid #ededed;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px 0 #cdcdcd;
+    cursor: pointer;
+    left: 270px;
+    z-index: 3;
   }
 }
 
@@ -74,5 +241,33 @@
 
   .example__wrapper {
     flex-direction: row;
+  }
+
+  .example__text {
+    width: 430px;
+    margin-top: 145px;
+  }
+
+  .example__features {
+    margin-top: 73px;
+  }
+
+  .example__cost {
+    width: 390px;
+    position: static;
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  .example__indicator {
+    margin-left: 210px;
+  }
+
+  .example__title {
+    margin-top: 31px;
+  }
+
+  .example__cost-span {
+    margin-left: 65px;
   }
 }

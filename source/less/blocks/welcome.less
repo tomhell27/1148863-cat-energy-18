@@ -1,18 +1,21 @@
 .welcome {
   max-width: 280px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 45px;
   display: flex;
 }
 
 .welcome__partnership {
   font-family: @font-family--oswald;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
   line-height: 20px;
+  width: 210px;
 }
 
 .welcome__address {
+  width: 213px;
   font-family: @font-family--arial;
   font-size: 14px;
   text-align: left;
@@ -22,11 +25,36 @@
 @media (min-width: @tablet-width) {
   .welcome {
     max-width: 710px;
+    padding-top: 65px;
+    justify-content: space-between;
+  }
+
+  .welcome__partnership {
+    width: 155px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 25px;
+    margin-left: 43px;
+  }
+
+  .welcome__address {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .welcome__address-spb {
+    margin-top: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome {
-    width: 570px;
+    width: 450px;
+    margin: 0;
+    margin-left: 140px;
+    margin-top: 160px;
   }
 }

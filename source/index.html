@@ -71,7 +71,7 @@
           </div>
           <p class="program-choice__info">
             Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить  необходимые мышцы!
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
           <a href="#catalog-2" class="program-choice__get">Каталог PRO </a>
         </div>
@@ -120,23 +120,35 @@
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </article>
-          <table class="example__features">
-            <tr class="example__bold">
-              <td>5 кг</td>
-              <td>60 дней</td>
-            </tr>
-            <tr class="example__small">
-              <td>снижение веса</td>
-              <td>затрачено времени</td>
-            </tr>
-          </table>
-          <p class="example__cost">затраты на питание:15 000 руб.</p>
+          <div class="example__features">
+            <div class="example__description">
+              <div class="example__description-wrapper">
+                <p class="example__bold">5 кг</p>
+                <p class="example__small">снижение веса</p>
+              </div>
+            </div>
+            <div class="example__description">
+              <div class="example__description-wrapper">
+                <p class="example__bold">60 дней</p>
+                <p class="example__small">затрачено времени</p>
+              </div>
+            </div>
+          </div>
+          <p class="example__cost">затраты на питание: <span class="example__cost-span">15 000 руб.</span></p>
         </div>
         <div>
           <img class="example__img" src="img/before-mobile@1x.png" width="311" height="232" alt="Жирный кот">
-          <button type="button" class="example__cat example__cat--was">БЫЛО</button>
-          <!--Тут будет индикатор-->
-          <button type="button" class="example__cat example__cat--is">СТАЛО</button>
+          <div class="example__indicator">
+            <div>
+              <label class="example__cat example__cat--was" for="was">БЫЛО</label>
+              <input class="example__checkbox example__checkbox--was" type="checkbox" id="was" name="was" checked>
+            </div>
+            <!--Тут будет индикатор-->
+            <div>
+              <label class="example__cat example__cat--is" for="is">СТАЛО</label>
+              <input class="example__checkbox example__checkbox--is" type="checkbox" id="is" name="is">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -144,8 +156,9 @@
   </main>
   <footer class="footer">
     <section class="welcome">
-      <p class="welcome__partnership">Приглашаем к сотрудничеству диллеров!</p>
-      <p class="welcome__address">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="welcome__partnership">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+      <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 <span
+          class="welcome__address-spb">Санкт-Петербург</span></p>
     </section>
     <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="«CAT ENERGY»">
     <section class="footer__info">
