@@ -212,68 +212,51 @@
     margin: 0 auto;
     margin-top: 37px;
     padding-left: 60px;
-    padding-top: 17px;
+    padding-top: 32px;
   }
 
   .program-form__nb {
     margin-right: 375px;
   }
 
-  .program-form__head--decoration::before {
-    display: none;
+  .program-form__head--decoration::before,
+  .program-form__head--decoration::after {
+    content: none;
   }
 
-  /*
-  .program-form__head--owner {
-    width: auto;
-    margin-top: 47px;
-    margin-bottom: 55px;
-  }
-
-  .program-form__head--cat {
-    margin-top: 65px;
-    width: auto;
-  }
-
-  .program-form__head--addition {
-    margin-top: 37px;
-    margin-left: 0;
-    width: auto;
-  }
-*/
   .program-form__container-nb {
     max-width: 1220px;
     margin-top: 50px;
   }
 
+  .program-form__line-head {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 35px;
+  }
+
+  .program-form__line-head::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: @color-button;
+    top: 50%;
+  }
+
   .program-form__head--decoration {
-    padding-left: 0;
-    width: auto;
-    display: flex;
-    min-width: 1300px;
-    margin-left: 41px;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 1300px;
+    margin: 0 auto;
   }
 
   .program-form__line {
-    width: auto;
-  }
-
-  .program-form__line-head {
-    width: auto;
-    display: flex;
-    margin-top: 45px;
-    margin-bottom: 50px;
-  }
-
-  .program-form__line-head::before {
-    content: " ";
+    display: block;
     position: relative;
-    top: 15px;
-    min-width: 1px;
-    height: 3px;
-    background-color: @color-button;
-    flex-grow: 1;
+    z-index: 6;
+    background-color: @color-back--main;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 }
