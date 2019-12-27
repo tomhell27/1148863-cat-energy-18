@@ -57,6 +57,10 @@
     background-color: @color-button;
     background-repeat: no-repeat;
     z-index: 0;
+
+    @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .main__head--catalog {

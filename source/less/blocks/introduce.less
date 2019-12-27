@@ -3,6 +3,10 @@
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   padding-top: 23px;
+
+  @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .introduce__head {
@@ -79,6 +83,13 @@
     line-height: 20px;
     position: absolute;
     left: 8px;
+    top: 210px;
+  }
+
+  .introduce__img {
+    position: relative;
+    right: 80px;
+    margin-top: 0;
   }
 }
 
@@ -94,6 +105,7 @@
     padding-top: 15px;
     margin-left: 45px;
     margin-top: 35px;
+    margin-bottom: 286px;
   }
 
   .introduce {
@@ -108,12 +120,11 @@
   }
 
   .introduce__img {
-    position: relative;
+    position: absolute;
     z-index: 6;
-    right: 50px;
     order: 4;
-    left: 500px;
-    bottom: 200px;
+    left: 380px;
+    top: -23px;
   }
 
   .introduce__head {
