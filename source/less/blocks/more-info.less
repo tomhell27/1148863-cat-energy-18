@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.more-info::before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  position: relative;
+  background-image: url("../img/icon-plus-mobile.svg");
+  margin-top: 27px;
+}
+
 .more-info__part {
   font-family: @font-family--arial;
   font-size: 12px;
@@ -47,10 +56,11 @@
   .more-info__show {
     width: 280px;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 0;
     background-color: @color-back--text;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 80px;
   }
 
   .more-info__head {
@@ -69,6 +79,13 @@
     font-size: 16px;
     line-height: normal;
     margin-bottom: 0;
+  }
+
+  .more-info::before {
+    background-image: url("../img/icon-plus.svg");
+    width: 61px;
+    height: 61px;
+    margin-top: 145px;
   }
 }
 

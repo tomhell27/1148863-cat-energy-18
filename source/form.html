@@ -104,7 +104,8 @@
         </div>
       </fieldset>
       <div class="program-form__line-head">
-        <label for="about" class="program-form__head program-form__head--decoration program-form__head--cat"><span class="program-form__line">Комментарий</span></label>
+        <label for="about" class="program-form__head program-form__head--decoration program-form__head--cat"><span
+            class="program-form__line">Комментарий</span></label>
       </div>
       <fieldset class="cat-info container">
         <textarea id="about" name="about-cat" rows="5" class="program-form__data program-form__data--about-cat">расскажите обо всех повадках кота
@@ -148,7 +149,12 @@
       <p class="welcome__address">ул. Большая Конюшенная, д. 19/8 <span
           class="welcome__address-spb">Санкт-Петербург</span></p>
     </section>
-    <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="380" alt="«CAT ENERGY»">
+    <picture>
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+      <img class="footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400"
+        srcset="img/bg-map-mobile@2x.png 2x" alt="«CAT ENERGY»">
+    </picture>
     <section class="footer__info">
       <div class="footer__container container">
         <img class="footer__image" src="img/logo-footer.svg" width="128" height="24" alt="«CAT ENERGY»">
