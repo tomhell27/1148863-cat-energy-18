@@ -33,6 +33,18 @@
   background-position: 2px 3px;
 }
 
+.cat-addition__check:hover + .cat-addition__label::before {
+  border: 1px solid @color-form--hover;
+}
+
+.cat-addition__check:active + .cat-addition__label::before {
+  opacity: 0.3;
+}
+
+.cat-addition__check:active + .cat-addition__label {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .cat-addition {
     width: 780px;

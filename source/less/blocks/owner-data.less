@@ -1,20 +1,13 @@
 .owner-data {
   border: none;
   padding: 0;
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
 }
 
 .owner-data__wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.owner-data__name {
-  text-transform: uppercase;
-  height: 40px;
-  margin-left: 12px;
-  padding-left: 10px;
 }
 
 .owner-data__mail {
@@ -27,9 +20,42 @@
   margin-bottom: 0;
 }
 
+.owner-data__mail,
+.owner-data__phone {
+  display: flex;
+  align-items: baseline;
+  max-width: 300px;
+  position: relative;
+}
+
+.owner-data__name {
+  text-transform: uppercase;
+  height: 40px;
+  margin-left: 12px;
+  padding-left: 10px;
+  flex-grow: 1;
+  width: auto;
+}
+
+.owner-data__info {
+  height: auto;
+  width: auto;
+}
+
+.owner-data__icon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+
+  &:active {
+    fill: @color-button;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .owner-data {
-    width: 770px;
+    width: 100%;
+    padding: 0;
   }
 
   .owner-data__mail {
@@ -38,24 +64,31 @@
   }
 
   .owner-data__wrapper {
-    padding-left: 47px;
-    max-width: 650px;
-    margin-left: 22px;
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 5px;
   }
 
   .owner-data__name {
-    padding-left: 17px;
     width: auto;
     font-size: 20px;
     line-height: 20px;
-    flex-grow: 1;
+    padding-left: 0;
+  }
+
+  .owner-data__name--mail {
+    padding-left: 15px;
+  }
+
+  .owner-data__name--phone {
+    padding-left: 10px;
   }
 
   .owner-data__mail,
   .owner-data__phone {
-    display: flex;
-    align-items: baseline;
+    max-width: 630px;
     height: 52px;
+    width: auto;
   }
 
   .owner-data__info {
@@ -78,7 +111,7 @@
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
-    max-width: 1220px;
+    width: 1220px;
   }
 
   .owner-data__name {
