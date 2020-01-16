@@ -54,12 +54,13 @@
 }
 
 .example__cat {
-  padding-bottom: 5px;
   font-family: @font-family--oswald;
   font-size: 16px;
   line-height: 20px;
   border: none;
   border-bottom: 1px dotted @color-cat;
+  transition: all 0.5s ease;
+  padding: 0;
 
   &:hover {
     border-bottom: 1px solid @color-cat--hvr;
@@ -151,16 +152,20 @@
   right: 18px;
 }
 
+.example__point {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .example {
-    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 60%, @color-back--text 40%, @color-back--text);
+    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 70%, @color-back--text 30%, @color-back--text);
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
     font-weight: normal;
-    margin-top: 48px;
+    margin-top: 55px;
     padding-left: 5px;
   }
 
@@ -169,38 +174,34 @@
     line-height: 24px;
     margin-top: 64px;
     padding-left: 5px;
+    width: 700px;
   }
 
   .example__bold {
     font-size: 30px;
     line-height: 37px;
+    margin-top: 8px;
   }
 
   .example__small {
     font-size: 14px;
     line-height: 14px;
     width: 170px;
-  }
-
-  .example__cost {
-    font-size: 20px;
-    line-height: 30px;
-    width: 191px;
-    position: relative;
-    text-align: right;
-    left: 515px;
-    bottom: 95px;
+    margin-top: 10px;
   }
 
   .example__cat {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .example__description {
     width: 162px;
     height: 72px;
     margin-right: 40px;
+    left: 4px;
   }
 
   .example__description-wrapper {
@@ -210,15 +211,15 @@
 
   .example__features {
     justify-content: flex-start;
-    margin-top: 56px;
+    margin-top: 50px;
     margin-left: 0;
   }
 
   .example__indicator {
     justify-content: space-between;
     width: 570px;
-    margin-left: 65px;
-    margin-top: 0;
+    margin-left: 73px;
+    margin-top: 100px;
   }
 
   .example__indicator::after {
@@ -235,34 +236,37 @@
     top: 10px;
   }
 
-  .example__cat--was::after {
-    content: "";
+  .example__point {
+    display: block;
     position: absolute;
-    width: 7px;
-    height: 7px;
-    background: @color-button;
-    border: 12px solid @color-border;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    box-shadow: 0 3px 1px 0 @color-back--catalog;
+    box-shadow: inset 0 0 0 12px @color-border,
+      0 5px 2px rgba(0, 0, 0, 0.15);
+    border: 1px solid @color-back--catalog;
     cursor: pointer;
-    left: 270px;
     z-index: 3;
-  }
+    background-color: @color-button;
+    right: 270px;
+    transition: all 0.5s ease;
 
-  .example__cat:hover + .example__cat--was::after {
-    box-shadow: 0 5px 1px 0 @color-back--catalog;
-  }
+    &:hover {
+      box-shadow: inset 0 0 0 12px @color-border,
+        0 5px 2px rgba(0, 0, 0, 0.25);
+    }
 
-  .example__cat:active + .example__cat--was::after {
-    box-shadow: inset 0 2px 2px 0  @color-button;
+    &:active {
+      border: 1px solid  @color-button;
+    }
   }
 
   .example__img {
     margin-top: 0;
     width: auto;
     height: auto;
-    top: -25px;
-    left: 15px;
+    top: 85px;
+    left: 18px;
   }
 
   .example__cat--is {
@@ -272,11 +276,26 @@
   .example__cat--was {
     width: 48px;
   }
+
+  .example__live {
+    position: relative;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 30px;
+    width: 195px;
+    position: absolute;
+    text-align: right;
+    right: 8px;
+    top: 281px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
     background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 50%, @color-back--text 50%, @color-back--text);
+    margin-bottom: 50px;
   }
 
   .example__wrapper {
@@ -284,8 +303,9 @@
   }
 
   .example__text {
-    width: 430px;
+    width: 435px;
     margin-top: 145px;
+    padding-left: 0;
   }
 
   .example__features {
@@ -300,14 +320,25 @@
   }
 
   .example__indicator {
-    margin-left: 210px;
+    margin-left: 215px;
+    margin-top: 10px;
   }
 
   .example__title {
     margin-top: 31px;
+    padding-left: 0;
   }
 
   .example__cost-span {
-    margin-left: 65px;
+    margin-left: 62px;
+  }
+
+  .example__img {
+    top: -30px;
+    left: 135px;
+  }
+
+  .example__bold {
+    margin-top: 0;
   }
 }

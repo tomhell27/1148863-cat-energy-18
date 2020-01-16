@@ -12,6 +12,7 @@
   text-align: left;
   line-height: 20px;
   width: 210px;
+  margin-bottom: 0;
 }
 
 .welcome__address {
@@ -20,13 +21,14 @@
   font-size: 14px;
   text-align: left;
   line-height: 20px;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
   .welcome {
-    margin-top: 25px;
+    margin-top: 32px;
     max-width: 630px;
-    padding-top: 101px;
+    padding-top: 90px;
     justify-content: space-between;
     margin-bottom: 40px;
   }
@@ -46,6 +48,8 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    padding-top: 2px;
+    padding-right: 5px;
   }
 
   .welcome__address-spb {
@@ -57,11 +61,16 @@
   .welcome {
     position: absolute;
     background-color: @color-back--main;
-    width: 670px;
+    width: 410px;
     height: 201px;
     margin: 0;
-    margin-left: 140px;
-    margin-top: 0;
+    margin-left: 170px;
+    margin-top: 109px;
     z-index: 6;
+    padding-top: 30px;
+  }
+
+  .welcome__address {
+    text-align: left;
   }
 }

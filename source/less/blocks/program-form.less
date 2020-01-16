@@ -23,7 +23,6 @@
   width: 280px;
   height: 150px;
   margin: 0 auto;
-  border: 1px solid @color-back--catalog-opacity;
 }
 
 .program-form__nb {
@@ -44,8 +43,8 @@
 }
 
 .program-form__data--about-cat {
-  padding-top: 16px;
-  padding-left: 21px;
+  padding-top: 17px;
+  padding-left: 30px;
 }
 
 .program-form__button {
@@ -65,30 +64,30 @@
   content: " ";
   position: relative;
   top: 15px;
-  min-width: 80px;
+  min-width: 100px;
   height: 3px;
   background-color: @color-button;
   flex-grow: 1;
   flex-shrink: 0;
-  margin-left: 15px;
+  margin-left: 19px;
 }
 
 
 .program-form__head--owner {
   margin-bottom: 10px;
   margin-top: 21px;
-  padding-left: 17px;
+  padding-left: 20px;
 }
 
 .program-form__head--cat {
-  margin-top: 29px;
-  padding-left: 17px;
+  margin-top: 25px;
+  padding-left: 19px;
 }
 
 .program-form__head--addition {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 15px;
-  padding-left: 17px;
+  padding-left: 20px;
 }
 
 .program-form__container-nb {
@@ -98,6 +97,11 @@
 
 .program-form__check {
   border: 1px solid @color-back--catalog-opacity;
+  transition: all 0.2s ease;
+}
+
+.program-form__check:invalid {
+  border: 2px solid @color-form--error;
 }
 
 .program-form__check:hover {
@@ -108,17 +112,6 @@
   border: 2px solid @color-font--arial;
 }
 
-.program-form__check:required:invalid:not(:placeholder-shown) {
-  border: 2px solid @color-form--error;
-}
-
-.program-form__check:required:invalid:not(:placeholder-shown) + .owner-data__icon {
-  fill: @color-form--error;
-}
-
-.program-form__check:active + .owner-data__icon {
-  fill: @color-button;
-}
 
 @media (min-width: @tablet-width) {
   .program-form__data {
@@ -155,8 +148,8 @@
   }
 
   .program-form__data--about-cat {
-    padding-top: 58px;
-    padding-left: 50px;
+    padding-top: 60px;
+    padding-left: 45px;
   }
 
   .program-form__nb {
@@ -180,12 +173,12 @@
     margin-top: 65px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
     padding-left: 0;
   }
 
   .program-form__head--cat {
-    margin-top: 60px;
+    margin-top: 62px;
     font-size: 36px;
     line-height: 36px;
     width: 768px;
@@ -199,7 +192,7 @@
     line-height: 36px;
     margin-left: 0;
     padding-left: 0;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   .program-form__container-nb {
@@ -238,8 +231,7 @@
     max-width: 1220px;
     margin: 0 auto;
     margin-top: 37px;
-    padding-left: 60px;
-    padding-top: 32px;
+    padding-top: 19px;
   }
 
   .program-form__nb {
@@ -254,6 +246,7 @@
   .program-form__container-nb {
     max-width: 1220px;
     margin-top: 50px;
+    margin-bottom: 90px;
   }
 
   .program-form__line-head {
@@ -261,7 +254,8 @@
     width: 100%;
     padding-bottom: 15px;
     padding-top: 15px;
-    margin-top: 30px;
+    margin-top: 34px;
+    margin-bottom: 20px;
   }
 
   .program-form__line-head::after {

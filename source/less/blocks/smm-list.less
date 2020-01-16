@@ -1,8 +1,8 @@
 .smm-list {
   display: flex;
   justify-content: center;
-  border-top: 1px solid @color-border;
-  border-bottom: 1px solid @color-border;
+  border-top: 1px solid @color-footer;
+  border-bottom: 1px solid @color-footer;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -20,6 +20,8 @@
 }
 
 .smm-list__icon {
+  transition: all 0.5s ease;
+
   &:hover {
     fill: @color-button;
   }
@@ -29,10 +31,45 @@
   }
 }
 
+.smm-list__icon-vk {
+  width: 22px;
+  height: 12px;
+}
+
+.smm-list__icon-inst {
+  width: 17px;
+  height: 17px;
+}
+
+.smm-list__icon-fb {
+  width: 10px;
+  height: 19px;
+}
+
 @media (min-width: @tablet-width) {
   .smm-list {
     border: none;
     align-items: center;
     padding: 0;
+  }
+
+  .smm-list__item:nth-child(2) {
+    margin-left: 23px;
+    margin-right: 29px;
+  }
+
+  .smm-list__icon-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .smm-list__icon-inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .smm-list__icon-fb {
+    width: 14px;
+    height: 28px;
   }
 }

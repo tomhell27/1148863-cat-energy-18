@@ -20,7 +20,7 @@
 .cat-data__wrapper {
   display: flex;
   align-items: baseline;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   margin-left: 18px;
   margin-right: 15px;
 }
@@ -31,6 +31,19 @@
   text-transform: uppercase;
   flex-grow: 1;
   padding-left: 12px;
+  width: 100px;
+}
+
+.cat-data__wrapper:nth-child(1) .cat-data__name {
+  padding-left: 16px;
+}
+
+.cat-data__wrapper:nth-child(2) .cat-data__name {
+  padding-left: 19px;
+}
+
+.cat-data__wrapper:nth-child(3) .cat-data__name {
+  padding-left: 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,7 +56,7 @@
   }
 
   .cat-data__wrapper {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     margin-left: 42px;
     width: 650px;
   }
