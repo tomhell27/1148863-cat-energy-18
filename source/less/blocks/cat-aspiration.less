@@ -2,6 +2,7 @@
   padding: 0;
   margin-top: 35px;
   margin-bottom: 13px;
+  border: @color-border;
 }
 
 .cat-aspiration__wrapper {
@@ -11,7 +12,7 @@
 }
 
 .cat-aspiration__label {
-  margin-left: 37px;
+  margin-left: 39px;
 }
 
 .cat-aspiration__label::before {
@@ -20,10 +21,10 @@
   left: 0;
   width: 10px;
   height: 10px;
-  background: #ededed;
-  border: 8px solid #ededed;
+  background: @color-border;
+  border: 8px solid @color-border;
   border-radius: 50%;
-  box-shadow: 0 1px 1px 0 #cdcdcd;
+  box-shadow: 0 1px 1px 0 @color-back--catalog;
   cursor: pointer;
 }
 
@@ -32,11 +33,15 @@
 }
 
 .cat-aspiration__check:hover + .cat-aspiration__label::before {
-  box-shadow: 0 3px 1px 0 #cdcdcd;
+  box-shadow: 0 1px 1px 0 @color-form--hover;
 }
 
 .cat-aspiration__check:active + .cat-aspiration__label::before {
-  box-shadow: 0 5px 1px 0 #cdcdcd;
+  opacity: 0.3;
+}
+
+.cat-aspiration__check:active + .cat-aspiration__label {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

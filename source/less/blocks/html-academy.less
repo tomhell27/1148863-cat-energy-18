@@ -7,6 +7,12 @@
   line-height: 16px;
   text-align: left;
   padding: 0;
+  text-decoration: none;
+  margin-top: 15px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .html-academy__p {
@@ -15,8 +21,23 @@
   padding-top: 14px;
 }
 
+.html-academy__icon {
+  fill: @color-html;
+
+  &:hover {
+    fill: @color-button;
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .html-academy {
     align-items: center;
+    margin-top: 0;
+  }
+
+  .html-academy__p {
+    padding-top: 0;
+    margin-right: 20px;
   }
 }
