@@ -1,8 +1,9 @@
 .cat-aspiration {
-  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 26px;
   margin-top: 35px;
   margin-bottom: 13px;
-  border: @color-border;
+  border: 1px solid @color-back--catalog-opacity;
 }
 
 .cat-aspiration__wrapper {
@@ -21,10 +22,10 @@
   left: 0;
   width: 10px;
   height: 10px;
-  background: @color-border;
-  border: 8px solid @color-border;
+  background: @color-back--main;
+  border: 8px solid @color-back--main;
   border-radius: 50%;
-  box-shadow: 0 1px 1px 0 @color-back--catalog;
+  box-shadow: 0 0 0 2px @color-back--catalog;
   cursor: pointer;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .cat-aspiration__check:hover + .cat-aspiration__label::before {
-  box-shadow: 0 1px 1px 0 @color-form--hover;
+  box-shadow: 0 0 0 1px @color-form--hover;
 }
 
 .cat-aspiration__check:active + .cat-aspiration__label::before {
@@ -52,7 +53,9 @@
   .cat-aspiration {
     margin-top: 51px;
     padding-top: 32px;
-    width: 630px;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 610px;
     margin-left: 46px;
   }
 

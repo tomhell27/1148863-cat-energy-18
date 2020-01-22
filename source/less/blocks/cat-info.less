@@ -1,16 +1,17 @@
 .cat-info {
-  display: flex;
-  flex-direction: column;
   border: none;
-  width: 280px;
-  margin: auto;
   margin-top: 12px;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
   .cat-info {
-    margin-left: 0;
     padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-info {
+    margin-top: 40px;
   }
 }
