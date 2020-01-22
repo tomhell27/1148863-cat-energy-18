@@ -61,10 +61,13 @@
   }
 
   .catalog__item {
-    background-image: linear-gradient(to top, @color-back--catalog-opacity, @color-back--catalog-opacity 80%, @color-back--main 20%, @color-back--main);
     width: 339px;
     border: none;
     margin-bottom: 67px;
+  }
+
+  .catalog__item:not(:last-child) {
+    background-image: linear-gradient(to top, @color-back--catalog-opacity, @color-back--catalog-opacity 80%, @color-back--main 20%, @color-back--main);
   }
 
   .catalog__head {

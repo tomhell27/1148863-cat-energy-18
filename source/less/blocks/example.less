@@ -6,9 +6,13 @@
 .example__wrapper {
   display: flex;
   flex-direction: column;
+  width: 310px;
+  margin: 0 auto;
 }
 
 .example__title {
+  width: 280px;
+  padding-left: 15px;
   font-family: @font-family--oswald;
   font-size: 36px;
   text-align: left;
@@ -24,6 +28,8 @@
   line-height: 18px;
   text-align: left;
   color: @color-font--arial;
+  width: 280px;
+  padding-left: 15px;
 }
 
 .example__bold {
@@ -50,7 +56,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  margin-top: 29px;
+  margin-top: 33px;
 }
 
 .example__cat {
@@ -86,14 +92,16 @@
   margin-top: 28px;
   display: flex;
   justify-content: space-between;
+  width: 280px;
+  padding-left: 16px;
 }
 
 .example__description {
   position: relative;
   width: 124px;
-  height: 56px;
+  height: 52px;
   border: 1px solid @color-back--catalog;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .example__description-wrapper {
@@ -103,7 +111,7 @@
   flex-direction: column;
   width: 90px;
   height: 60px;
-  background-color: @color-back--main;
+  background-color: @color-back--text;
   left: 16px;
   top: 10px;
 }
@@ -114,7 +122,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 31px;
-  margin-left: 42px;
+  margin-left: 58px;
+  margin-bottom: 31px;
 }
 
 .example__indicator::after {
@@ -123,8 +132,8 @@
   width: 70px;
   height: 6px;
   border: 4px solid @color-back--text;
-  border-radius: 16%;
-  box-shadow: 0 0 0 2px @color-back--catalog;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px @color-back--catalog;
   background-image: linear-gradient(to left, @color-back--main, @color-back--main 50%, @color-button 50%, @color-button);
   left: 60px;
   top: 5px;
@@ -159,7 +168,8 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 70%, @color-back--text 30%, @color-back--text);
+    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 58%, @color-back--text 42%, @color-back--text);
+    width: 100%;
   }
 
   .example__title {
@@ -168,6 +178,7 @@
     font-weight: normal;
     margin-top: 55px;
     padding-left: 5px;
+    width: 700px;
   }
 
   .example__text {
@@ -208,12 +219,15 @@
   .example__description-wrapper {
     width: 130px;
     height: 70px;
+    background-color: @color-back--main;
   }
 
   .example__features {
     justify-content: flex-start;
     margin-top: 50px;
     margin-left: 0;
+    width: 480px;
+    padding-left: 0;
   }
 
   .example__indicator {
@@ -221,6 +235,7 @@
     width: 570px;
     margin-left: 73px;
     margin-top: 100px;
+    margin-bottom: 75px;
   }
 
   .example__indicator::after {
@@ -229,7 +244,7 @@
     width: 428px;
     height: 6px;
     border: 1px solid @color-back--catalog;
-    border-radius: 15%;
+    border-radius: 2.5px;
     box-shadow: none;
     background-image: none;
     background-color: @color-back--catalog;
@@ -243,7 +258,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 12px @color-border,
+    box-shadow: inset 0 0 0 12px @color-back--main,
       0 5px 2px rgba(0, 0, 0, 0.15);
     border: 1px solid @color-back--catalog;
     cursor: pointer;
@@ -290,18 +305,23 @@
     position: absolute;
     text-align: right;
     right: 8px;
-    top: 281px;
+    top: 275px;
+    margin-top: 36px;
+  }
+
+  .example__wrapper {
+    width: 720px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .example {
-    background-image: linear-gradient(to bottom, @color-back--main, @color-back--main 50%, @color-back--text 50%, @color-back--text);
-    margin-bottom: 50px;
+    background-image: linear-gradient(to top, @color-back--text, @color-back--text 75%, @color-back--main 25%, @color-back--main);
   }
 
   .example__wrapper {
     flex-direction: row;
+    width: 1220px;
   }
 
   .example__text {
@@ -322,7 +342,7 @@
   }
 
   .example__indicator {
-    margin-left: 215px;
+    margin-left: 80px;
     margin-top: 10px;
   }
 
@@ -337,10 +357,19 @@
 
   .example__img {
     top: -30px;
-    left: 135px;
+    left: auto;
+    right: auto;
   }
 
   .example__bold {
     margin-top: 0;
+  }
+
+  .example__description-wrapper {
+    background-color: @color-back--text;
+  }
+
+  .example__live {
+    width: 570px;
   }
 }

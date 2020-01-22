@@ -1,7 +1,9 @@
 .welcome {
-  width: 280px;
-  margin-top: 43px;
   display: flex;
+  margin: 0 auto;
+  margin-top: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .welcome__partnership {
@@ -11,7 +13,7 @@
   text-align: left;
   line-height: 20px;
   width: 210px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 
 .welcome__address {
@@ -20,17 +22,27 @@
   font-size: 14px;
   text-align: left;
   line-height: 20px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
+}
+
+.welcome__catalog {
+  background-color: @color-back--text;
 }
 
 @media (min-width: @tablet-width) {
   .welcome {
-    width: 630px;
-    padding-top: 90px;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 33px;
-    margin-left: 49px;
+    width: 768px;
+    padding-top: 48px;
+    padding-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    background-color: @color-back--text;
+    justify-content: space-around;
+  }
+
+  .welcome__index {
+    background-color: @color-back--main;
   }
 
   .welcome__partnership {
@@ -50,6 +62,7 @@
     text-align: right;
     padding-top: 2px;
     padding-right: 5px;
+    margin-left: 175px;
   }
 
   .welcome__address-spb {
@@ -61,15 +74,18 @@
   .welcome {
     position: absolute;
     background-color: @color-back--main;
-    width: 410px;
-    height: 201px;
+    width: 480px;
+    height: 151px;
     z-index: 6;
-    padding-top: 30px;
+    padding-top: 37px;
     margin-top: 103px;
-    margin-left: 75px;
+    margin-left: 40px;
+    padding-left: 75px;
+    justify-content: stretch;
   }
 
   .welcome__address {
     text-align: left;
+    margin-left: 95px;
   }
 }

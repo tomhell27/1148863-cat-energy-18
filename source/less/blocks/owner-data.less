@@ -47,6 +47,10 @@
   right: 15px;
   top: 16px;
 
+  &:hover {
+    fill: @color-font--black;
+  }
+
   &:active {
     fill: @color-button;
   }
@@ -58,6 +62,10 @@
 
 .owner-data__name:active + .owner-data__icon {
   fill: @color-button;
+}
+
+.owner-data__name:hover + .owner-data__icon {
+  fill: @color-font--black;
 }
 
 @media (min-width: @tablet-width) {
