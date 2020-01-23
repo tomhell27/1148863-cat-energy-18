@@ -11,6 +11,7 @@
   margin: 0 auto;
   text-align: center;
   margin-top: 55px;
+  margin-bottom: 50px;
   z-index: 1;
 
   @media (min-resolution: @retina-dppx), (min-resolution: @retina-dpi) {
@@ -52,6 +53,7 @@
     height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     margin-top: 75px;
+    margin-bottom: 73px;
     flex-direction: row;
     justify-content: space-around;
 
@@ -67,7 +69,7 @@
   }
 
   .present__text {
-    margin-top: 0;
+    margin-top: 30px;
     text-align: left;
   }
 
@@ -83,7 +85,7 @@
     height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin: 0;
-    top: 50px;
+    top: 80px;
     flex-direction: column;
     right: 40px;
 
@@ -94,12 +96,16 @@
   }
 
   .present::before {
-    bottom: 24px;
+    bottom: 13;
     right: 0;
   }
 
   .present__text {
     text-align: center;
-    margin-bottom: 23px;
+    margin-top: 0;
+  }
+
+  .present__a {
+    margin-top: 20px;
   }
 }
